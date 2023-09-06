@@ -1,0 +1,38 @@
+# ISEC6000 Secure DevOps Project - Task 1: Set Up Initial Infrastructure
+
+In this task, we will set up the initial infrastructure for our Secure DevOps project. This includes creating a Kubernetes cluster on Google Kubernetes Engine (GKE), configuring `kubectl` to manage the cluster, and setting up a private GitHub repository to store project files.
+
+## Step 1: Create a Kubernetes Cluster on GKE
+
+1. Log in to your Google Cloud Console.
+
+2. Navigate to the Kubernetes Engine section and click "Create Cluster."
+
+3. Configure your cluster settings:
+   - Cluster Name: [Umer-20294728]
+   - Node Pool Configuration: Customize the node pool settings as needed.
+   - Kubernetes Version: Choose the desired Kubernetes version.
+
+4. Click "Create" to provision your GKE cluster.
+
+## Step 2: Install and Configure `kubectl`
+
+1. After creating the GKE cluster, configure your local environment to use `kubectl` to interact with the cluster.
+
+2. In the Google Cloud Console, navigate to the "Kubernetes Engine" > "Clusters" section.
+
+3. Click the "Connect" button next to your cluster.
+
+4. Follow the instructions to authenticate `kubectl` with your GKE cluster. Typically, you can use a command like the following (replace placeholders with your actual cluster information):
+
+   ```bash
+   gcloud container clusters get-credentials [Umer-20294728] -- --project [Umer-20294728D]
+
+
+git init
+git add .
+git commit -m "Initial setup for Task 1"
+git remote add origin [https://github.com/Umer-20294728/-isec6000-assignment1--task1/]
+git push -u origin master
+
+
